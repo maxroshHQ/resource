@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Completion</title>
+<link rel="stylesheet" href="task.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img id="profilePic" src="https://via.placeholder.com/50" alt="User">
+        <div>
+        <h2 id="userName">Welcome</h2>
+        <span class="earn"><marquee ><p>Complete Tasks to Earn Points</p></marquee></span>
+    </div>
+</div>
+
+<div class="tasks">
+    <button class="task-btn" onclick="completeTask('like')">Like Tweet</button>
+    <button class="task-btn" onclick="completeTask('retweet')">Retweet</button>
+    <button class="task-btn" onclick="completeTask('comment')">Comment</button>
+    <button class="task-btn" onclick="completeTask('engage')">Engage</button>
+</div>
+
+<div id="completionMessage" class="hidden">
+    <h3>All tasks completed!</h3>
+</div>
+
+<div class="score"><img src="2.png" alt="Hamster">
+    <span class="score" id="score"> 0</span></div>
+<br><br>
+<div class="level">
+<p>Level <span id="currentLevel">1</span></p>
+<div class="progress-bar">
+<div id="progress"></div>
+</div>
+</div>
+</div>
+<audio id="clickSound" src="23.mp3"></audio> 
+<script src="task.js"></script>
+</body>
+</html>
